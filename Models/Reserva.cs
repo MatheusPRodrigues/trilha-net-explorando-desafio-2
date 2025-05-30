@@ -12,7 +12,7 @@ namespace DesafioProjetoHospedagem.Models
         {
             DiasReservados = diasReservados;
         }
-
+        
         public void CadastrarHospedes(List<Pessoa> hospedes)
         {
             if (hospedes.Count <= Suite.Capacidade)
@@ -32,7 +32,8 @@ namespace DesafioProjetoHospedagem.Models
 
         public int ObterQuantidadeHospedes()
         {
-            return Hospedes.Count;
+            int qtd = Hospedes.Count;
+            return qtd;
         }
 
         public decimal CalcularValorDiaria()
